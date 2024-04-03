@@ -223,6 +223,16 @@ Clears all entries from the address book.
 
 Format: `clear`
 
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Take note:**<br>
+
+* As clear is deemed as a critical operation, you will see a confirmation message.
+
+* Do not panic, entering `y` following it will delete proceed to delete the specified entry, while entering anything else will default to cancelling the operation.
+
+</div>
+
 ### Exiting the program : `exit`
 
 Exits the program.
@@ -266,11 +276,13 @@ _Details coming soon ..._
 Action | Format, Examples
 --------|------------------
 **Add** | `add n/NAME p/PHONE_NUMBER e/EMAIL a/AVAILABILITY [t/TAG]…​` <br> e.g., `add n/James Ho p/22224444 e/jamesho@example.com a/25/05/2024 t/friend t/colleague`
-**Clear** | `clear`
-**Delete** | `delete INDEX`<br> e.g., `delete 3`
+**Clear**[^1] | `clear`
+**Delete**[^1] | `delete INDEX`<br> e.g., `delete 3`
 **Edit** | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/AVAILABILITY] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
 **Find** | `find KEYWORD [n/NAME] [a/AVAILABILITY] [MORE_KEYWORDS]`<br> e.g., `find James Jake`
 **Assign** | `assign INDEX d/ASSIGNMENT_DETAILS a/AVAILABILITY`
 **View Assignments** | `lista`
 **List** | `list`
 **Help** | `help`
+
+[^1]: Denotes a critical operation, will have an additional confirmation step
