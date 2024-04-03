@@ -2,6 +2,7 @@ package seedu.address.logic;
 
 import static seedu.address.logic.Messages.MESSAGE_CONFIRMATION;
 
+import seedu.address.logic.commands.ClearCommand;
 import seedu.address.logic.commands.Command;
 import seedu.address.logic.commands.DeleteCommand;
 
@@ -22,7 +23,8 @@ public class Confirmation {
      * @return True if command requires confirmation. False if otherwise.
      */
     public boolean hasConfirmation(Command command) {
-        return command instanceof DeleteCommand;
+        return command instanceof DeleteCommand
+                || command instanceof ClearCommand;
     }
 
     /**
