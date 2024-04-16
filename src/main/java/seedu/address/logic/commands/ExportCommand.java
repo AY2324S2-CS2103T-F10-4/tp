@@ -20,6 +20,7 @@ import seedu.address.model.Model;
  * Export all the information of people and assignments in the entire address book as comma-separated values files.
  * The files are located in data directory.
  */
+// Solution below inspired by https://chat.openai.com/c/cf700fda-7623-46fb-b506-7bf794bb6475
 public class ExportCommand extends Command {
 
     public static final String COMMAND_WORD = "export";
